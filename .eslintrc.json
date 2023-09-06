@@ -71,6 +71,7 @@
         "no-const-assign": "error",
         "no-dupe-args": "error",
         "no-empty-function": "error",
+        "@typescript-eslint/no-explicit-any": "off",
         "no-fallthrough": "error",
         "no-floating-decimal": "error",
         "no-inline-comments": "off",
@@ -126,6 +127,12 @@
         "space-infix-ops": "error",
         "space-unary-ops": "error",
         "spaced-comment": "error",
-        "yoda": "error"
+        "yoda": [
+            "error",
+            "never",
+            {
+                "exceptRange": true
+            }
+        ]
     }
 }
